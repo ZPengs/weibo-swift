@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="DS11WB" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="AFF-tQ-TEJ" id="WyE-Qa-G1G"/>
+                <outlet property="iconViewBottomCons" destination="GJs-I1-bty" id="2bY-7i-Txm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-VZ-Lv0">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDj-48-Syo">
+                    <rect key="frame" x="270" y="470" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-tQ-TEJ">
+                    <rect key="frame" x="255" y="360" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="puB-V0-W0v"/>
+                        <constraint firstAttribute="width" constant="90" id="ti1-Oo-KJl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VIe-VZ-Lv0" secondAttribute="trailing" id="7cL-rl-ndK"/>
+                <constraint firstAttribute="bottom" secondItem="AFF-tQ-TEJ" secondAttribute="bottom" constant="150" id="GJs-I1-bty"/>
+                <constraint firstItem="fDj-48-Syo" firstAttribute="top" secondItem="AFF-tQ-TEJ" secondAttribute="bottom" constant="20" id="Gjn-C4-3Wq"/>
+                <constraint firstItem="fDj-48-Syo" firstAttribute="centerX" secondItem="AFF-tQ-TEJ" secondAttribute="centerX" id="LY8-M1-jIc"/>
+                <constraint firstItem="VIe-VZ-Lv0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Oe8-5g-4W6"/>
+                <constraint firstItem="AFF-tQ-TEJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XB7-Hr-hti"/>
+                <constraint firstAttribute="bottom" secondItem="VIe-VZ-Lv0" secondAttribute="bottom" id="j9R-fc-RFX"/>
+                <constraint firstItem="VIe-VZ-Lv0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uyu-4g-iFz"/>
+            </constraints>
+            <point key="canvasLocation" x="384" y="292"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="375" height="667"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>
